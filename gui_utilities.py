@@ -73,6 +73,10 @@ class GUI:
             win.setFixedSize(win.size())
         else:
             print("IMPORTANT: Resizing figure is not supported")
+
+        # Enable interactive plotting and open plot window
+        plt.ion()
+        plt.show()
         
         self.axs_iv = [] # list of IV curve axis
         self.axsim = None # simulation plot axis
